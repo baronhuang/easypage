@@ -56,7 +56,7 @@ export default class extends EasyPage {
 }
 ```
 
-![](./GIF 2020-4-5 12-03-37.gif)
+![](12-03-37.gif)
 
 
 
