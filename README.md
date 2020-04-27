@@ -56,7 +56,7 @@ export default class extends EasyPage {
 }
 ```
 
-![](GIF 2020-4-5 12-03-37.gif)
+![](./GIF 2020-4-5 12-03-37.gif)
 
 
 
@@ -352,7 +352,7 @@ this.list.push(...['d']);
 
 ### demo
 
-代码示例在 http://192.168.30.29/member-npm/member-egg-example 项目上，访问路径：/demo/easypage
+代码示例在 https://github.com/baronhuang/egg-multiple-page-example 项目上，访问路径：/demo/easypage
 
 
 
