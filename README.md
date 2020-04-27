@@ -26,7 +26,7 @@
 ## 快速开始
 
 ```shell
-npm i easypage or yarn add easypage
+npm i @koicarp/easypage or yarn add @koicarp/easypage
 ```
 下面举一个简单的输入框例子，演示数据驱动
 ```html
@@ -37,7 +37,7 @@ npm i easypage or yarn add easypage
 ```
 
 ```js
-import { EasyPage, $init } from 'easypage';
+import { EasyPage, $init } from '@koicarp/easypage';
 
 @$init({
   // 需要编译的节点
@@ -226,7 +226,7 @@ easyPage支持通过es6 class + html模板的方式来封装组件。跟动态�
 子组件：
 
 ```js
-import { EasyPage, $init, $on } from 'easypage';
+import { EasyPage, $init, $on } from '@koicarp/easypage';
 import template from './template.html';
 
 @$init({
@@ -582,7 +582,7 @@ new Sub({ productList: this.productList });
 
 ### 内置装饰器
 
-内置装饰器可直接通过`import { $init, $on } from 'easypage';`这种方式来使用。
+内置装饰器可直接通过`import { $init, $on } from '@koicarp/easypage';`这种方式来使用。
 
 
 
