@@ -1,0 +1,22 @@
+# 首先在 travis-ci.org 上激活当前的仓库
+# 一旦代码仓库有新的 Commit，Travis 就会去找这个文件，执行里面的命令
+language: node_js
+node_js:
+  - lts/*
+install:
+  - yarn install # npm ci
+script:
+  - yarn build # npm run build
+
+cache: yarn
+
+deploy:
+  provider: npm
+  email: 1029023304@qq.com
+  api_key: $NPM_KEY # npm的token
+  skip_cleanup: true
+  keep_history: true
+  on:
+    tags: true # version更新了才会推送到npm
+    branch: master
+  tag: latest # atest指定npm发布的包的tag，这里指定为最新版
