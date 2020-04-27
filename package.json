@@ -1,6 +1,6 @@
 {
-  "name": "easypage",
-  "version": "1.0.15",
+  "name": "@koicarp/easypage",
+  "version": "1.0.16",
   "description": "一款轻量级的mvvm前端框架，支持es6 class 的面向对象方式进行开发，让你从繁琐的dom操作中解放，并提高代码的可读性，支持IE9+以上浏览器。",
   "main": "dist/index.js",
   "files": [
@@ -19,7 +19,7 @@
     "url": "https://github.com/baronhuang/easypage.git"
   },
   "author": "baronhuang",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.8.7",
     "@babel/runtime": "^7.8.7",
