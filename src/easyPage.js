@@ -87,27 +87,28 @@ export class EasyPage {
     const attrNode = [];
     const attrList = this.$attrs.map(v => `[${v}]`).join(',');
     $el.find(attrList).andSelf().each(function (i, item) {
-      if (item.getAttribute('v-text')) {
+      let $item = $(item);
+      if ($item.attr('v-text')) {
         textNode.push(item);
       }
 
-      if (item.getAttribute('v-class')) {
+      if ($item.attr('v-class')) {
         classNode.push(item);
       }
 
-      if (item.getAttribute('v-model')) {
+      if ($item.attr('v-model')) {
         modelNode.push(item);
       }
 
-      if (item.getAttribute('v-show')) {
+      if ($item.attr('v-show')) {
         showNode.push(item);
       }
 
-      if (item.getAttribute('v-on')) {
+      if ($item.attr('v-on')) {
         eventNode.push(item);
       }
 
-      if (item.getAttribute('v-attr')) {
+      if ($item.attr('v-attr')) {
         attrNode.push(item);
       }
     });
