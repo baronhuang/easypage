@@ -274,14 +274,13 @@ export class EasyPage {
         realKey = key;
         this.update$Prop({ key: realKey, firstKey, value, target });
       } else {
-        let updateKeys = Object.keys(this.$propMap).filter(v => v.split(':')[0].trim() === firstKey);
-        for (let updateKey of updateKeys) {
-          if (updateKeys.indexOf(':') !== -1) {
+        let updateKeysList = Object.keys(this.$propMap).filter(v => v.split(':')[0].trim() === firstKey);
+        for (let updateKey of updateKeysList) {
+          if (updateKey.indexOf(':') !== -1) {
             let temp = updateKey.split(':');
             if (temp[1]) {
               realKey = key.replace(new RegExp(`^${firstKey}`), temp[1]);
               firstKey = realKey.split('.')[0];
-              // console.log('------------realKey', realKey, firstKey);
               this.update$Prop({ key: realKey, firstKey, value, target });
             }
           } else {
